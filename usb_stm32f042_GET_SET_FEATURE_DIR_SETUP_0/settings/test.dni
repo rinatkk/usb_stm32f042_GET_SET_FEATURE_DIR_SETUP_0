@@ -1,0 +1,118 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[DebugChecksum]
+Checksum=2109045362
+[CodeCoverage]
+Enabled=_ 0
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[InterruptLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[DataLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+[Interrupts]
+Enabled=1
+[MemConfig]
+Base=1
+Manual=0
+Ddf=1
+TypeViol=0
+Stop=1
+[Trace1]
+Enabled=0
+ShowSource=1
+[Simulator]
+Freq=10000000
+MultiCoreRunAll=1
+[StLinkDriver]
+CStepIntDis=_ 0
+LeaveTargetRunning=_ 0
+stlinkserialNo=40541387
+stlinkfoundProbes=
+stlinkResetStyle=0
+stlinkResetStrategy=1
+[struct_types]
+Fmt0=Conf_Pack_Typedef-bRequest	4	0
+Fmt1=Conf_Pack_Typedef-bmRequestType	4	0
+Fmt2=Conf_Pack_Typedef-wIndex	4	0
+Fmt3=Conf_Pack_Typedef-wLength	4	0
+Fmt4=Conf_Pack_Typedef-wValue	4	0
+Fmt5=ep_t-rx_cnt	4	0
+Fmt6=ep_t-rx_flag	4	0
+Fmt7=ep_t-setup_flag	4	0
+Fmt8=ep_t-status	4	0
+Fmt9=ep_t-tx_flag	4	0
+Fmt10=struct <Unnamed 6>-cn_ctr_dir0	3	0
+Fmt11=struct <Unnamed 6>-cn_ctr_dir1	3	0
+Fmt12=struct <Unnamed 6>-cn_ep_setup0	3	0
+Fmt13=struct <Unnamed 6>-cn_ep_setup1	3	0
+Fmt14=struct <Unnamed 6>-cn_istr_dir0	3	0
+Fmt15=struct <Unnamed 6>-cn_istr_dir1	3	0
+Fmt16=struct <Unnamed 6>-cn_setup_dir0	3	0
+Fmt17=struct <Unnamed 6>-cn_setup_dir1	3	0
+Fmt18=struct <Unnamed 6>-dir	4	0
+[array_types]
+Fmt0=unsigned char[32]	4	0
+Fmt1=unsigned char[4]	4	0
+Fmt2=unsigned char[64]	4	0
+Fmt3=unsigned short[24]	4	0
+Fmt4=unsigned short[2]	4	0
+Fmt5=unsigned short[4]	4	0
+Fmt6=unsigned short[5]	4	0
+Fmt7=unsigned short[64]	4	0
+[watch_formats]
+Fmt0={W}42:addr32	4	0
+Fmt1={W}42:bm_req	4	0
+Fmt2={W}42:cn_ctr_dir0	3	0
+Fmt3={W}42:cn_ctr_dir1	3	0
+Fmt4={W}42:cn_rst	3	0
+Fmt5={W}42:desc_len	4	0
+Fmt6={W}42:r	4	0
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 0 "EMUL_CODE" "0x080001D2" 0 0 1 "" 0 "" 0
+Count=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Aliases]
+A0=_ "C:\Users\1978\Desktop\HOME-VERS-HOME\usb_projects\current\usb_stm32f042_report - копия\main.c" "D:\code\mkr\stm32\stm32f042\iar\usb_projects\current\usb_stm32f042_report - копия\main.c"
+Count=1
+SuppressDialog=1
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=1

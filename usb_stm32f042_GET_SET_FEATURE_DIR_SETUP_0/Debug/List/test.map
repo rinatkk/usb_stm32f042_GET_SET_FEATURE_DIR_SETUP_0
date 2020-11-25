@@ -1,0 +1,275 @@
+###############################################################################
+#
+# IAR ELF Linker V7.80.4.12462/W32 for ARM                15/Aug/2020  14:11:37
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\1978\Desktop\HOME-VERS-HOME\usb_projects\current\usb_stm32f042_GET_FEATURE_DIR_SETUP\Debug\Exe\test.out
+#    Map file     =  
+#        C:\Users\1978\Desktop\HOME-VERS-HOME\usb_projects\current\usb_stm32f042_GET_FEATURE_DIR_SETUP\Debug\List\test.map
+#    Command line =  
+#        C:\Users\1978\Desktop\HOME-VERS-HOME\usb_projects\current\usb_stm32f042_GET_FEATURE_DIR_SETUP\Debug\Obj\M0_Startup.o
+#        C:\Users\1978\Desktop\HOME-VERS-HOME\usb_projects\current\usb_stm32f042_GET_FEATURE_DIR_SETUP\Debug\Obj\main.o
+#        -o
+#        C:\Users\1978\Desktop\HOME-VERS-HOME\usb_projects\current\usb_stm32f042_GET_FEATURE_DIR_SETUP\Debug\Exe\test.out
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull --map
+#        C:\Users\1978\Desktop\HOME-VERS-HOME\usb_projects\current\usb_stm32f042_GET_FEATURE_DIR_SETUP\Debug\List\test.map
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\config\linker\ST\stm32f042x6.icf" --semihosting --entry
+#        __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x08007fff] { ro };
+"P2":  place in [from 0x20000000 to 0x200017ff] { rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address   Size  Object
+  -------            ----        -------   ----  ------
+"A0":                                      0xc0
+  .intvec            ro code  0x08000000   0xc0  M0_Startup.o [1]
+                            - 0x080000c0   0xc0
+
+"P1":                                     0xf93
+  .text              ro code  0x080000c0  0xc98  main.o [1]
+  .text              ro code  0x08000d58   0xe0  I32DivModFast.o [4]
+  .text              ro code  0x08000e38    0x2  IntDivZer.o [4]
+  .text              ro code  0x08000e3a   0x3c  zero_init3.o [4]
+  .text              ro code  0x08000e76   0x3c  packbits_init_single.o [4]
+  .text              ro code  0x08000eb2    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000eb4   0x28  data_init.o [4]
+  .iar.init_table    const    0x08000edc   0x20  - Linker created -
+  .text              ro code  0x08000efc   0x1a  cmain.o [4]
+  .text              ro code  0x08000f16    0x4  low_level_init.o [3]
+  .text              ro code  0x08000f1a    0x8  exit.o [3]
+  .text              ro code  0x08000f22    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f24    0xa  cexit.o [4]
+  .text              ro code  0x08000f2e    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f30   0x14  exit.o [5]
+  .text              ro code  0x08000f44    0xc  cstartup_M.o [4]
+  .text              ro code  0x08000f50    0x8  M0_Startup.o [1]
+  .text              ro code  0x08000f58    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f5a    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f5c    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f5e    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f60    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f62    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f64    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f66    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f68    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f6a    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f6c    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f6e    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f70    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f72    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f74    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f76    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f78    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f7a    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f7c    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f7e    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f80    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f82    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f84    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f86    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f88    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f8a    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f8c    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f8e    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f90    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f92    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f94    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f96    0x2  M0_Startup.o [1]
+  .text              ro code  0x08000f98    0x2  M0_Startup.o [1]
+  .rodata            const    0x08000f9a    0x0  zero_init3.o [4]
+  .rodata            const    0x08000f9a    0x0  packbits_init_single.o [4]
+  Initializer bytes  const    0x08000f9a   0xb9  <for P2-1>
+                            - 0x08001053  0xf93
+
+"P2", part 1 of 3:                         0xf5
+  P2-1                        0x20000000   0xf5  <Init block>
+    .data            inited   0x20000000   0x40  main.o [1]
+    .data            inited   0x20000040    0x4  main.o [1]
+    .data            inited   0x20000044    0x4  main.o [1]
+    .data            inited   0x20000048   0x14  main.o [1]
+    .data            inited   0x2000005c   0x2c  main.o [1]
+    .data            inited   0x20000088    0x4  main.o [1]
+    .data            inited   0x2000008c    0xc  main.o [1]
+    .data            inited   0x20000098   0x14  main.o [1]
+    .data            inited   0x200000ac   0x14  main.o [1]
+    .data            inited   0x200000c0   0x34  main.o [1]
+    .data            inited   0x200000f4    0x1  main.o [1]
+                            - 0x200000f5   0xf5
+
+"P2", part 2 of 3:                        0x400
+  CSTACK                      0x200000f8  0x400  <Block>
+    CSTACK           uninit   0x200000f8  0x400  <Block tail>
+                            - 0x200004f8  0x400
+
+"P2", part 3 of 3:                        0x270
+  .bss               zero     0x200004f8  0x200  main.o [1]
+  .bss               zero     0x200006f8   0x40  main.o [1]
+  .bss               zero     0x20000738   0x18  main.o [1]
+  .bss               zero     0x20000750    0x8  main.o [1]
+  .bss               zero     0x20000758    0x8  main.o [1]
+  .bss               zero     0x20000760    0x4  main.o [1]
+  .bss               zero     0x20000764    0x2  main.o [1]
+  .bss               zero     0x20000766    0x1  main.o [1]
+                            - 0x20000767  0x26f
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x26f:
+          0x200004f8  0x26f
+
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0xb9 (75% of destination):
+          0x08000f9a   0xb9
+    1 destination range, total size 0xf5:
+          0x20000000   0xf5
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+C:\Users\1978\Desktop\HOME-VERS-HOME\usb_projects\current\usb_stm32f042_GET_FEATURE_DIR_SETUP\Debug\Obj: [1]
+    M0_Startup.o                272
+    main.o                    3 224      185      868
+    -------------------------------------------------
+    Total:                    3 496      185      868
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    exit.o                        8
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                       12
+
+rt6M_tl.a: [4]
+    I32DivModFast.o             224
+    IntDivZer.o                   2
+    cexit.o                      10
+    cmain.o                      26
+    cstartup_M.o                 12
+    data_init.o                  40
+    packbits_init_single.o       60
+    zero_init3.o                 60
+    -------------------------------------------------
+    Total:                      434
+
+shb_l.a: [5]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Linker created                        32    1 024
+-----------------------------------------------------
+    Grand Total:              3 962      217    1 892
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x08000edc          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08000efc          --   Gb  - Linker created -
+?main                   0x08000efd         Code  Gb  cmain.o [4]
+CSTACK$$Base            0x200000f8          --   Gb  - Linker created -
+CSTACK$$Limit           0x200004f8          --   Gb  - Linker created -
+EP0_Init                0x080002dd   0x5c  Code  Gb  main.o [1]
+EP0_rx                  0x20000040    0x4  Data  Gb  main.o [1]
+EP0_set                 0x20000000   0x40  Data  Gb  main.o [1]
+EP_Data_1               0x200006f8   0x40  Data  Gb  main.o [1]
+EP_Read_Func_1          0x08000179   0x7e  Code  Gb  main.o [1]
+EP_Send_Null            0x080001f9   0x64  Code  Gb  main.o [1]
+EP_Setup                0x20000750    0x8  Data  Gb  main.o [1]
+EP_Wait_Null            0x08000275   0x5e  Code  Gb  main.o [1]
+EP_Write_Func_1         0x08000107   0x66  Code  Gb  main.o [1]
+ISTR_Dir                0x20000758    0x8  Data  Gb  main.o [1]
+RCC_init                0x08000c05   0x8c  Code  Gb  main.o [1]
+Read_PBM8               0x08000b85   0x76  Code  Gb  main.o [1]
+Region$$Table$$Base     0x08000edc          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08000efc          --   Gb  - Linker created -
+Reply_To_Setup          0x08000379  0x40e  Code  Gb  main.o [1]
+USB_ConfigDesc          0x2000005c   0x2c  Data  Gb  main.o [1]
+USB_DeviceDesc          0x20000048   0x14  Data  Gb  main.o [1]
+USB_Handler             0x080007e9  0x36c  Code  Gb  main.o [1]
+USB_Init                0x08000c91   0x6c  Code  Gb  main.o [1]
+USB_ReportDesc          0x200000c0   0x34  Data  Gb  main.o [1]
+USB_SetStatus           0x20000760    0x4  Data  Gb  main.o [1]
+USB_StringLangDesc      0x20000088    0x4  Data  Gb  main.o [1]
+USB_StringManufacDesc   0x2000008c    0xc  Data  Gb  main.o [1]
+USB_StringProdDesc      0x20000098   0x14  Data  Gb  main.o [1]
+USB_StringSNDesc        0x200000ac   0x14  Data  Gb  main.o [1]
+Write_PBM               0x080000c1   0x46  Code  Gb  main.o [1]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x200017ff         Data  Gb  command line/config [2]
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x20000000         Data  Gb  command line/config [2]
+__aeabi_idiv            0x08000d85         Code  Gb  I32DivModFast.o [4]
+__aeabi_idiv0           0x08000e39         Code  Gb  IntDivZer.o [4]
+__aeabi_idivmod         0x08000d85         Code  Gb  I32DivModFast.o [4]
+__aeabi_uidiv           0x08000d8b         Code  Gb  I32DivModFast.o [4]
+__aeabi_uidivmod        0x08000d8b         Code  Gb  I32DivModFast.o [4]
+__cmain                 0x08000efd         Code  Gb  cmain.o [4]
+__exit                  0x08000f31   0x14  Code  Gb  exit.o [5]
+__iar_data_init3        0x08000eb5   0x28  Code  Gb  data_init.o [4]
+__iar_packbits_init_single3
+                        0x08000e77   0x3c  Code  Gb  packbits_init_single.o [4]
+__iar_program_start     0x08000f45         Code  Gb  cstartup_M.o [4]
+__iar_zero_init3        0x08000e3b   0x3c  Code  Gb  zero_init3.o [4]
+__low_level_init        0x08000f17    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  M0_Startup.o [1]
+_call_main              0x08000f09         Code  Gb  cmain.o [4]
+_exit                   0x08000f25         Code  Gb  cexit.o [4]
+_main                   0x08000f13         Code  Gb  cmain.o [4]
+a_                      0x200004f8  0x200  Data  Gb  main.o [1]
+addr32                  0x20000044    0x4  Data  Gb  main.o [1]
+cn_rst                  0x20000764    0x2  Data  Gb  main.o [1]
+desc_len                0x20000766    0x1  Data  Gb  main.o [1]
+endpoints               0x20000738   0x18  Data  Gb  main.o [1]
+exit                    0x08000f1b    0x8  Code  Gb  exit.o [3]
+main                    0x08000d49   0x10  Code  Gb  main.o [1]
+r                       0x200000f4    0x1  Data  Gb  main.o [1]
+
+
+[1] = C:\Users\1978\Desktop\HOME-VERS-HOME\usb_projects\current\usb_stm32f042_GET_FEATURE_DIR_SETUP\Debug\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+  3 962 bytes of readonly  code memory
+    217 bytes of readonly  data memory
+  1 892 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
